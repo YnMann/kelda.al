@@ -17,6 +17,10 @@ main .container .row{margin: 100px 0px;}
   transition: 500ms;
 }
 
+.burger {
+  display: none;
+}
+
 /* </main classes> */
 /* <Animations> */
 
@@ -28,6 +32,11 @@ main .container .row{margin: 100px 0px;}
 /* </Animatios> */
 
 /* <head> */
+
+.logo {
+  height: 100%;
+  margin-right: 13%;
+}
 
 /* .style { */
   /* background-color: rgb(28,28,28); */
@@ -41,12 +50,14 @@ main .container .row{margin: 100px 0px;}
   background-size: contain;
   background-position: left;
 }
+.header {
+  background-color: rgb(253, 229, 158, 0.3);
+}
 
 .nav-menu {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 45%;
+  justify-content: end;
   position: absolute;
   left: 0%;
   top: 0%;
@@ -60,7 +71,14 @@ main .container .row{margin: 100px 0px;}
   font-size: 22px;
 }
 
+.options {
+  display: flex;
+  gap: 20px;
+  margin-right: 50px;
+}
 .options a {
+  display: flex;
+  align-items: top;
   color: black
 }
 
@@ -119,7 +137,6 @@ main .container .row{margin: 100px 0px;}
 .explanationText {
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
-
 .explanationText h2{
   font-size: 23px;
   font-weight: bold;
@@ -133,9 +150,73 @@ main .container .row{margin: 100px 0px;}
   margin: 50px 0px;
 }
 
-.video {
+.hm1 {
+  margin-top: 30%;
+  margin-bottom: 10%;
+}
+
+.video1 {
   width: 30%;
   height: 20%;
 }
 
+.video2 {width: 100%;}
+.vm{  
+  width: 70%;
+  margin-top: 20%;
+  position: relative;
+}
+
+.relative {position: relative;}
+
+.explanationImg{position: relative;}
+.explanationImg::before{
+  content: '';
+  top: 30px;
+  left: -30px;
+  position: absolute;
+  background-color:rgb(253, 229, 158);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-top-left-radius: 100px;
+}
+
+.vm::before {
+  content: '';
+  top: 30px;
+  left: -30px;
+  position: absolute;
+  background-color:rgb(253, 229, 158);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 /* </main> */
+/* <footer> */
+
+footer {
+  background-color: #131928;
+}
+
+footer p {
+  color: #fff;
+  font-size: small;
+}
+
+footer > .container .row .socialMedia{
+  margin: 20px 0px;
+}
+
+footer > .container .row .socialMedia a {
+  color: #fff;
+  font-size: 30px;
+}
+footer > .container .row .socialMedia a:nth-child(1) i{ margin-right: 10px; }
+footer > .container .row .socialMedia a:nth-child(2) i{ margin-left: 10px; }
+
+footer > .container .row .socialMedia a:hover:nth-child(1) i { color: #c03035; }
+footer > .container .row .socialMedia a:hover:nth-child(2) i { color: rgb(37,211,102); }
+
+/* </footer> */

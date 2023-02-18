@@ -13,6 +13,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="C:\Users\aidan\OneDrive\Desktop\IT\keldyAl\static\static.css" />
+    <link rel="shortcut icon" href="../image/logo.svg">
 	<script src="../js/javascript.js"></script>
 	<title>Homepage</title>
 </head>
@@ -24,10 +25,12 @@
 	</div>
 
 	<div class="options">
-		<a href="#"><i class="fa-regular fa-heart"></i></a>
-		<a href="#"><i class="fa-regular fa-user"></i></a>
-		<a href="#"><i class="fa-solid fa-basket-shopping"></i></a>		
+		<a href="#"><p>Избранное</p> <i class="fa-regular fa-heart"></i></a>
+		<a href="#"><p>Учетная запись</p> <i class="fa-regular fa-user"></i></a>
+		<a href="#"><p>Корзина</p> <i class="fa-solid fa-basket-shopping"></i></a>		
 	</div>
+
+	<div class="logo"><a href="HomePage.html"><img src="../image/logo.svg" style="width: 100%; height: 100%;"></a></div>
 </div>
 </header>
 
@@ -79,19 +82,38 @@
 	<div class="explanationImg col-5"><img src="../image/photo10.png" style="width: 100%; height: 100%;"></div>
 </div>
 
-<div class="row flex-wrap justify-content-evenly align-items-center">
-	<video class="video" controls="controls">
+<div class="row flex-wrap justify-content-center">
+	<video class="video1" controls="controls">
 		<source src="../image/video3.MP4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 	</video>
 
-	<div class="explanationText col-xl-5">
-		<h1>Почему стоит выбрать нас?</h1>
+	<div class="explanationText relative col-xl-5">
+		<h1 class="hm1">Почему стоит выбрать нас?</h1>
+		<span class="bef"></span>
+
+		<div class="vm">
+		<video class="video2" controls muted autoplay="autoplay" loop="loop">
+			<source src="../image/video2.MP4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+		</video>
+		</div>
 	</div>
+
 </div>
 </div>
 </main>
 
+<footer>
+<div class="container">
+<div class="row text-center">
+	<div class="socialMedia">
+		<a href="#"><i class="fa-brands fa-instagram"></i></a>
+		<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+	</div>
 
-<div style="height: 2000px;"></div>
+	<p>©2023 Kelda.al</p>
+</div>
+</div>
+</footer>
+
 </body>
 </html>
