@@ -1,4 +1,5 @@
 $(function(){
+
     // preloader
 
     window.onload = function () {
@@ -8,7 +9,7 @@ $(function(){
           document.body.classList.remove('loaded_hiding');
         }, 500);
       }
-
+//--------------------------------------------------------------------------------------------------
     // nav-menu
 
     $(window).on("scroll", function() {
@@ -16,6 +17,7 @@ $(function(){
         else $('#nav').removeClass('fix');
     });
 
+//--------------------------------------------------------------------------------------------------
     // Animation while scrolling
 
     function onEntry(entry) {
@@ -43,4 +45,5 @@ $(function(){
     for (let elm of elements3) {
         observer.observe(elm);
     }
+
 });
